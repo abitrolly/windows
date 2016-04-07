@@ -4,4 +4,4 @@ build_script:
 - cmd: appveyor DownloadFile https://downloads.activestate.com/ActivePython/releases/3.4.3.2/ActivePython-3.4.3.2-win32-x86.msi
 - cmd: appveyor DownloadFile https://downloads.activestate.com/ActiveTcl/releases/8.6.4.1/ActiveTcl8.6.4.1.299124-win32-ix86-threaded.exe
 # example of pushing artifacts
-- cmd: appveyor PushArtifact Active*
+- cmd: FOR %%I in (Active*) DO appveyor PushArtifact %%I
