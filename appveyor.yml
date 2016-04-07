@@ -1,1 +1,4 @@
-
+version: {build}
+build_script:
+- cmd: appveyor DownloadFile https://downloads.activestate.com/ActivePython/releases/3.4.3.2/ActivePython-3.4.3.2-win32-x86.msi
+- cmd: appveyor PushArtifact ActivePython-3.4.3.2-win32-x86.msi
