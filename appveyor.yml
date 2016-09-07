@@ -2,7 +2,7 @@ version: "{build}"
 
 install_script:
   # feature: tox_testing, 1 line
-  - python -m install tox
+  - python -m pip install tox
 build_script:
   # feature: tox_testing, 1 line
   - tox
