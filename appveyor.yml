@@ -5,7 +5,7 @@ install_script:
   - python -m pip install tox
 build_script:
   # feature: tox_testing, 1 line
-  - tox
+  - python -m tox
 
 # example of downloading files
 #- cmd: appveyor DownloadFile https://downloads.activestate.com/ActivePython/releases/3.4.3.2/ActivePython-3.4.3.2-win32-x86.msi
