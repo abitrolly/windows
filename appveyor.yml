@@ -1,11 +1,19 @@
+# Yak shaving with AppVeyor
+# https://www.appveyor.com/docs/appveyor-yml/
+
 version: "{build}"
 
 install:
+  - echo --- Install ---
   # feature: tox_testing, 1 line
-  - python -m pip install tox
+  #- python -m pip install tox
+  # feature: dumb_environment, 1 line
+  - set
+  
 build_script:
+  - echo --- Build ---
   # feature: tox_testing, 1 line
-  - python -m tox
+  #- python -m tox
 
 # example of downloading files
 #- cmd: appveyor DownloadFile https://downloads.activestate.com/ActivePython/releases/3.4.3.2/ActivePython-3.4.3.2-win32-x86.msi
