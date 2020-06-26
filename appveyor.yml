@@ -15,7 +15,9 @@ build_script:
   # feature: tox_testing, 1 line
   #- python -m tox
   - echo --- Python 2 on Windows ---
-  - python2 -c "import sys; print('sys.getfilesystemencoding() - ' + sys.getfilesystemencoding())"
+  - py -2 -c "import sys; print('sys.getfilesystemencoding() - ' + sys.getfilesystemencoding())"
+  - echo --- Python 3 on Windows ---
+  - py -3 -c "import sys; print('sys.getfilesystemencoding() - ' + sys.getfilesystemencoding())"
 
 # example of downloading files
 #- cmd: appveyor DownloadFile https://downloads.activestate.com/ActivePython/releases/3.4.3.2/ActivePython-3.4.3.2-win32-x86.msi
