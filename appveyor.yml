@@ -3,6 +3,8 @@
 
 version: "{build}"
 
+clone_depth: 1
+
 install:
   - echo --- Install ---
   # feature: tox_testing, 1 line
